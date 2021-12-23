@@ -5,4 +5,10 @@ spring:
         readChannel01-in-0:
           destination: channel01
         readChannel01-out-0:
-          destination: channel02
+          destination: TRANSACTIONS-TOPIC
+          
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
