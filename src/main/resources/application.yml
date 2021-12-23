@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        readChannel01-in-0:
+          destination: channel01
+        readChannel01-out-0:
+          destination: channel02
